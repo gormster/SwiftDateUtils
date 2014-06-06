@@ -101,11 +101,11 @@ class SwiftDateUtilsTests: XCTestCase {
         
         XCTAssertEqual(s1, "7/4/08, 12:00 AM")
         
-        let s2 = d1.format(date: .FullStyle, time: .NoStyle)
+        let s2 = d1.format(date: .FullStyle)
         
         XCTAssertEqual(s2, "Friday, July 4, 2008")
         
-        let s3 = d1.format(date: .NoStyle, time: .FullStyle)
+        let s3 = d1.format(time: .FullStyle)
         
         XCTAssertEqual(s3, "12:00:00 AM GMT")
         
