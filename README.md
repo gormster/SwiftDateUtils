@@ -17,7 +17,7 @@ First of all, `.format`. Let's face it, setting up an NSDateFormatter every time
     d1.format("YYYY-MM-dd'T'hh:mm:ss")
     // > 2008-07-04T12:00:00
     
-or one or two pair of NSDateFormatStyles
+or one or two NSDateFormatStyles, named `date:` and `time:`
 
     d1.format(date: .ShortStyle, time: .ShortStyle)
     // > "7/4/08, 12:00 AM" (depending on your locale)
